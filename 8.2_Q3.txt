@@ -1,0 +1,51 @@
+Q.3 Write a Program to find square of each element from the given array.
+For example,
+Input:
+Enter array size: 5
+
+
+Enter array elements:
+a[0] = 7
+a[1] = 4
+a[2] = 9
+a[3] = 5
+a[4] = 2
+
+
+Ans: // Online C compiler to run C program online
+#include <stdio.h>
+
+
+int main() {
+    int n;
+    printf("enter the array size: ");
+    scanf("%d",&n);
+    printf("enter the array element:\n");
+  int a[n];
+  for (int i=0;i<n;i++){
+      printf("a[%d]=",i);
+      scanf("\n%d",&a[i]);
+  }
+    printf("The squares are:");
+     for (int i = 0; i < n; i++) {
+        printf("%d, ", a[i] * a[i]);
+    }
+    printf("\n");
+    return 0;
+}
+
+
+O\p: /tmp/b8U44HoHbA.o
+enter the array size: 5
+enter the array element:
+a[0]=7
+a[1]=4
+a[2]=9
+a[3]=5
+a[4]=2
+The squares are:49, 16, 81, 25, 4, 
+
+
+
+
+=== Code Execution Successful ===

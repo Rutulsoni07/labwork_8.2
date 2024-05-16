@@ -1,0 +1,45 @@
+﻿Q.2 Write a Program to find leap years between two given numbers and store them in an array. And then print that array.
+For example,
+Input:
+Enter the first number: 2020
+
+
+Enter the second number: 2040
+
+
+Output:
+The array is: 2020, 2024, 2028, 2032, 2036, 2040
+Ans:  // Online C compiler to run C program online
+#include <stdio.h>
+
+
+int main() {
+    int num1=100,num2=100,year=0,i;
+    int a[num1],b[num2],c[year];
+  printf("enter the number: ");
+scanf("%d",&a[num1]);
+printf("enter the number: ");
+scanf("%d",&b[num2]);
+for (i=a[num1];i<=b[num2];i++){
+    if(i %4==0){
+        c[year]=i;
+        year++;
+    }
+}
+printf("The array is: ");
+    for (i = 0; i < year; i++) {
+        printf("%d, ", c[i]);
+    }
+    printf("\n");
+    return 0;
+}
+
+
+O\p: /tmp/Rg0u7Cmu3g.o
+enter the number: 2020
+enter the number: 2040
+The array is: 2020, 2024, 2028, 2032, 2036, 2040, 
+
+
+
+

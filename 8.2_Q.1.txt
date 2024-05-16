@@ -1,0 +1,84 @@
+Q.1 Write a Program to perform the merge operation of two 1D arrays & store it in another array. Keep in mind that both array sizes can be different.
+For example,
+Input:
+Enter array A's size: 5
+
+Enter array A's elements:
+a[0] = 7
+a[1] = 4
+a[2] = 9
+a[3] = 5
+a[4] = 2
+
+Enter array B's size: 3
+
+Enter array B's elements:
+b[0] = 1
+b[1] = 3
+b[2] = 6
+
+Output:
+Array C is: 7, 4, 9, 5, 2, 1, 3, 6
+
+input=
+#include <stdio.h>
+
+int main() {
+   int n;
+   printf("enter array A's size:");
+   scanf("%d",&n);
+   
+   int a[n];
+     printf("Enter array A's elements:\n");
+       for (int i=0;i<n;i++){
+        printf("a[%d]=",i);
+         scanf("%d", &a[i]);
+}
+
+    int m;
+   printf("enter array B's size:");
+   scanf("%d",&m);
+   
+     int b[m];
+     printf("Enter array B's element:\n");
+     for(int i=0;i<m;i++){
+         printf("b[%d]=",i);
+         scanf("%d",&b[i]);
+     }
+     int k;
+     k=n+m;
+     int c[k];
+     for(int i=0;i<n;i++){
+         c[i]=a[i];
+         
+     }
+     for(int i=0;i<m;i++){
+         c[n+i]=b[i];
+         
+     }
+   
+    printf("array c is:");
+    for(int i=0;i<k;i++){
+        printf("%d,",c[i]);
+    }
+     
+    return 0;
+}
+
+output=
+/tmp/jOkHRnUODG.o
+enter array A's size:5
+Enter array A's elements:
+a[0]=7
+a[1]=4
+a[2]=9
+a[3]=5
+a[4]=2
+enter array B's size:3
+Enter array B's element:
+b[0]=1
+b[1]=3
+b[2]=6
+array c is:7,4,9,5,2,1,3,6,
+
+=== Code Execution Successful ===
